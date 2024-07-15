@@ -2,7 +2,7 @@ package com.TulipTechnologies.SampleMoveURCap.impl;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
-import com.TulipTechnologies.SampleMoveURCap.impl.SimpleMoveService;
+
 import com.ur.urcap.api.contribution.InstallationNodeContribution;
 
 /**

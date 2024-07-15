@@ -23,5 +23,5 @@ public class SimpleMoveService implements InstallationNodeContribution{
         writer.appendLine("movej([0.0, -1.57, 1.57, -1.57, 1.57, 0.0], a=1.2, v=0.25)\n");
 
     }
-
+    
 }

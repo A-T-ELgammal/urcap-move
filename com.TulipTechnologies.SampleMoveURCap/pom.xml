@@ -41,7 +41,7 @@
 		<ursim.home></ursim.home>
 
 		<!--Host and standard user/password for UR Sim running in a VM-->
-		<ursimvm.install.host></ursimvm.install.host>
+		<ursimvm.install.host>192.168.1.46</ursimvm.install.host>
 		<ursimvm.install.username>ur</ursimvm.install.username>
 		<ursimvm.install.password>easybot</ursimvm.install.password>
 	</properties>
@@ -57,8 +57,7 @@
 		<dependency>
 			<groupId>com.ur.urcap</groupId>
 			<artifactId>api</artifactId>
-			<version>1.12.0</version>
-			<scope>provided</scope>
+			<version>1.14.0</version>
 		</dependency>
 
 		<!-- Test dependencies -->
@@ -138,7 +137,7 @@
 					</execution>
 				</executions>
 			</plugin>
-		</plugins>
+		</plugins>	
 	</build>
 
 	<profiles>
