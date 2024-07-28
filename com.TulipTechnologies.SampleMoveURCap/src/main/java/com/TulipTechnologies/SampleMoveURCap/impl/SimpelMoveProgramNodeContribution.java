@@ -71,5 +71,4 @@ public class SimpelMoveProgramNodeContribution implements ProgramNodeContributio
 
 
     }
-    
 }

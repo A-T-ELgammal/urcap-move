@@ -40,8 +40,7 @@ public class SimpleMoveProgramNodeService implements ProgramNodeService{
                              "<title>Pick and Place Move!</title>" +
                              "</head>" +
                              "<body>" +
-                             "<h1>implement the urscript in URcap </h1>" +
-                             "<p>This is a default HTML content for the URCap.</p>" +
+                             "<h3>implement the urscript in URcap </h3>" +
                              "</body>" +
                              "</html>";
         InputStream htmlStream = new ByteArrayInputStream(htmlContent.getBytes(StandardCharsets.UTF_8));

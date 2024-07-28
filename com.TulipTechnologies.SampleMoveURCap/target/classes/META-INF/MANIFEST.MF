@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1722149391163
+Bnd-LastModified: 1722153651263
 Build-Jdk-Spec: 22
 Bundle-Activator: com.TulipTechnologies.SampleMoveURCap.impl.Activator
 Bundle-Category: URCap
