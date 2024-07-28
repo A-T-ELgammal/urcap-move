@@ -33,7 +33,7 @@ public class SimpelMoveProgramNodeContribution implements ProgramNodeContributio
 
     @Override
     public String getTitle() {
-        return "Simple move contribution";
+        return "Pick and Place Node!";
     }
 
     @Override

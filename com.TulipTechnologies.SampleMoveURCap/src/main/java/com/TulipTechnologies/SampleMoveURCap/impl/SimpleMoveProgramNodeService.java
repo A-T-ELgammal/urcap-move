@@ -1,6 +1,8 @@
 package com.TulipTechnologies.SampleMoveURCap.impl;
 
+import java.io.ByteArrayInputStream;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 import com.ur.urcap.api.contribution.ProgramNodeContribution;
 import com.ur.urcap.api.contribution.ProgramNodeService;
@@ -33,8 +35,18 @@ public class SimpleMoveProgramNodeService implements ProgramNodeService{
 
     @Override
     public InputStream getHTML() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getHTML'");
+       String htmlContent = "<html>" +
+                             "<head>" +
+                             "<title>Pick and Place Move!</title>" +
+                             "</head>" +
+                             "<body>" +
+                             "<h1>implement the urscript in URcap </h1>" +
+                             "<p>This is a default HTML content for the URCap.</p>" +
+                             "</body>" +
+                             "</html>";
+        InputStream htmlStream = new ByteArrayInputStream(htmlContent.getBytes(StandardCharsets.UTF_8));
+        return  htmlStream;
+
     }
 
     @Override

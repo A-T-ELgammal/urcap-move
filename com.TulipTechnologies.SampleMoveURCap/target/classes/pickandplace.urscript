@@ -1,10 +1,12 @@
 def setToOpen():
   set_digital_out(0,False)
+  textmsg("Gripper Opened!")
   sleep(1.0)
 end
 
 def setToClose():
   set_digital_out(0,True)
+  textmsg("Gripper closed!")
   sleep(1.0)
 end
 
@@ -22,6 +24,14 @@ def pickAndPlace(pickPosition, placePosition):
   setToOpen()
 end
 
+def moveToDefaultPosition():
+  defaultPosition = [0.0, -1.57, 1.57, -1.57, 0.0]
+  movej(defaultPosition, a= 1.2, v= 0.25)
+  sleep(1)
+  textmsg("mission Done!")
+end
+
 pickPosition = [0.5, -1.2, 1.8, -2.0, -1.5, 0.3]
 placePosition = [-0.3, -1.1, 1.5, -1.7, 1.0, 0.8]
 pickAndPlace(pickPosition, placePosition)
+moveToDefaultPosition()
