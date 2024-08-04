@@ -69,6 +69,5 @@ public class SimpelMoveProgramNodeContribution implements ProgramNodeContributio
             writer.appendLine("textmsg(\"Error reading .urscript file: " + e.getMessage() + "\")");
         }
 
-
     }
 }

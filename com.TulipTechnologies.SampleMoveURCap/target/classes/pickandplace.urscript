@@ -1,17 +1,17 @@
 def setToOpen():
-  set_digital_out(0,False)
+  rg_grip(50,40)
   textmsg("Gripper Opened!")
   sleep(1.0)
 end
 
 def setToClose():
-  set_digital_out(0,True)
+  rg_grip(10,40)
   textmsg("Gripper closed!")
   sleep(1.0)
 end
 
 def moveToPosition(joint_position):
-  movej(joint_position, a = 1.4, v = 1.05)
+  movej(joint_position, a = 1.4, v = 0.80)
   sleep(1)
 end
 
