@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1722758471238
+Bnd-LastModified: 1723898492794
 Build-Jdk-Spec: 22
 Bundle-Activator: com.TulipTechnologies.SampleMoveURCap.impl.Activator
 Bundle-Category: URCap
@@ -14,9 +14,11 @@ Bundle-Vendor: URCaps R us Inc.
 Bundle-Version: 1.0.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin 5.1.9
 Import-Package: com.ur.urcap.api.contribution;version="[1.9,2)",com.ur.u
- rcap.api.domain;version="[1.11,2)",com.ur.urcap.api.domain.data;version
- ="[1.11,2)",com.ur.urcap.api.domain.script;version="[1.8,2)",org.osgi.f
- ramework;version="[1.6,2)"
+ rcap.api.contribution.installation;version="[1.8,2)",com.ur.urcap.api.c
+ ontribution.installation.swing;version="[1.8,2)",com.ur.urcap.api.domai
+ n;version="[1.11,2)",com.ur.urcap.api.domain.data;version="[1.11,2)",co
+ m.ur.urcap.api.domain.script;version="[1.8,2)",javax.imageio,javax.swin
+ g,org.osgi.framework;version="[1.6,2)"
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-6.3.1.202206071316
 URCapCompatibility-CB3: true

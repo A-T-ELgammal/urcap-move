@@ -1,3 +1,6 @@
 /home/ahmed/projects/urcap-move/com.TulipTechnologies.SampleMoveURCap/src/main/java/com/TulipTechnologies/SampleMoveURCap/impl/Activator.java
 /home/ahmed/projects/urcap-move/com.TulipTechnologies.SampleMoveURCap/src/main/java/com/TulipTechnologies/SampleMoveURCap/impl/SimpelMoveProgramNodeContribution.java
 /home/ahmed/projects/urcap-move/com.TulipTechnologies.SampleMoveURCap/src/main/java/com/TulipTechnologies/SampleMoveURCap/impl/SimpleMoveProgramNodeService.java
+/home/ahmed/projects/urcap-move/com.TulipTechnologies.SampleMoveURCap/src/main/java/com/TulipTechnologies/SampleMoveURCap/impl/SocketInstallationNodeContribution.java
+/home/ahmed/projects/urcap-move/com.TulipTechnologies.SampleMoveURCap/src/main/java/com/TulipTechnologies/SampleMoveURCap/impl/SocketInstallationNodeView.java
+/home/ahmed/projects/urcap-move/com.TulipTechnologies.SampleMoveURCap/src/main/java/com/TulipTechnologies/SampleMoveURCap/impl/SocketInstallationProgramNodeService.java

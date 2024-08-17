@@ -1,0 +1,15 @@
+thread socket_connection_thread():
+    socket_conn = socket_open(socket_ip, socket_port)
+    port_str = to_str(socket_port)
+    textmsg("robot connected to device with IP: " + socket_ip + " and port: " + port_str)
+
+    while (True):
+        if (socket_conn):
+            received_order = socket_read_string()
+            textmsg(received_order)
+        end
+        sync()
+    end
+end
+
+thread_handler = run socket_connection_thread()

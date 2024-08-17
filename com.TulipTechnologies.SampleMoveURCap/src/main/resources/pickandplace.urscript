@@ -1,11 +1,11 @@
 def setToOpen():
-  rg_grip(50,40)
+  # rg_grip(50,40)
   textmsg("Gripper Opened!")
   sleep(1.0)
 end
 
 def setToClose():
-  rg_grip(10,40)
+  # rg_grip(10,40)
   textmsg("Gripper closed!")
   sleep(1.0)
 end
@@ -24,7 +24,15 @@ def pickAndPlace(pickPosition, placePosition):
   setToOpen()
 end
 
+def pickAndPlaceMove(pickPosition, placePosition):
+  movej(pickPosition, a= 1.4, v = 0.70)
+  sleep(.5)
+  movel(placePosition, a = 1.4, v = 0.70)
+  textmsg("pick and place done movement ... ")
+end
+
 pickPosition = [0.5, -1.2, 1.8, -2.0, -1.5, 0.3]
 placePosition = [-0.3, -1.1, 1.5, -1.7, 1.0, 0.8]
 pickAndPlace(pickPosition, placePosition)
 textmsg("mission Done!")
+
