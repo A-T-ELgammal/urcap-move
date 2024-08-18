@@ -1,12 +1,4 @@
 
-
-
-
-
-
-
-
-
 def setToOpen():
   # rg_grip(50,40)
   textmsg("Gripper Opened!")
@@ -42,6 +34,26 @@ end
 
 pickPosition = [0.5, -1.2, 1.8, -2.0, -1.5, 0.3]
 placePosition = [-0.3, -1.1, 1.5, -1.7, 1.0, 0.8]
-pickAndPlace(pickPosition, placePosition)
-textmsg("mission Done!")
+# pickAndPlace(pickPosition, placePosition)
+# textmsg("mission Done!")
 
+def excuteOrder(orderValue):
+  if orderValue == 1:
+    textmsg("ordering Esspresso ...")
+  elif orderValue == 2:
+    textmsg("ordering Latte ...")
+  elif orderValur == 3:
+    textmsg("ordering Cappucino ...")
+  else:
+    textmsg("Invalid order ...")
+  end
+  textmsg("Mission Done!")
+end
+
+def checkNewOrder():
+  orderValue = modbus_get_signal_status("order_register", False)
+  if orderValue != 0:
+    excuteOrder(orderValue)
+    modbus_set_output_signal("order_register", 0, False)
+  end
+end
