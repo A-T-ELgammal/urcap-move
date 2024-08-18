@@ -30,7 +30,6 @@ public class SocketInstallationNodeContribution implements InstallationNodeContr
     private JTextField portField;
     private String IP;
     private String Port;
-
     public SocketInstallationNodeContribution(DataModel model) {
         this.model = model;
     }
@@ -167,6 +166,10 @@ private void startModbusServer()
         writer.appendLine("global socket_ip = \"" + getIP() + "\"");
         writer.appendLine("global socket_port = " + getPort());
         writer.appendLine("global received_order = \"\"");
+        // setup Modbus Tcp connection 
+        writer.appendLine("modbus_add_signal");
+      
+      
         InputStream is = getClass().getResourceAsStream("/socketConnection.urscript");
         try {
             if (is != null) {

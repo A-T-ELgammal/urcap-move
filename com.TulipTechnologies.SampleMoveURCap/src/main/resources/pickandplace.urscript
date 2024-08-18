@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 def setToOpen():
   # rg_grip(50,40)
   textmsg("Gripper Opened!")
