@@ -38,7 +38,7 @@ public class SocketInstallationNodeContribution implements InstallationNodeContr
     @Override
     public void openView() {
         // This method is called when the view is opened
-        
+
     }
 
     @Override
@@ -152,7 +152,15 @@ public class SocketInstallationNodeContribution implements InstallationNodeContr
         this.Port = port;
     }
 
-    
+private void startModbusServer()
+{
+    String ip = getIP();
+    String port = getPort();
+
+    // ModbusTcpServer modbusServer = new ModbusTcpServer();
+        
+}
+
 
     @Override
     public void generateScript(ScriptWriter writer) {
